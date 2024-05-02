@@ -1,6 +1,16 @@
+body {
+  background-color: #ced4da;
+}
 .container {
   max-width: 600px;
   height: auto;
   margin: auto;
   background-color: #495057;
+  font-family: cursive;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+h1 {
+  text-align: center;
 }

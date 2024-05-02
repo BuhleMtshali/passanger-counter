@@ -1,10 +1,11 @@
-let passangerElement = document.querySelector("#passangers");
-let passangerNumber = 0;
+let number = 0;
 
-function increase() {
-  passangerNumber += 1;
+function increase(event) {
+  event.preventDefault();
 
-  passangerElement.innerHTML = passangerNumber;
+  number += 1;
+  let passangerElement = document.querySelector("#passangers");
+  passangerElement.innerHTML = number;
 }
 
 let increaseButton = document.querySelector("#increase-btn");

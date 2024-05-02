@@ -1,10 +1,12 @@
+let passangerElement = document.querySelector("#passangers");
+let saveElement = document.querySelector("#previous-entries");
 let number = 0;
 
 function increase(event) {
   event.preventDefault();
 
   number += 1;
-  let passangerElement = document.querySelector("#passangers");
+
   passangerElement.innerHTML = number;
 }
 
@@ -13,7 +15,7 @@ increaseButton.addEventListener("click", increase);
 
 function save(event) {
   event.preventDefault();
-  let saveElement = document.querySelector("#previous-entries");
+
   let saveStr = number + " - ";
   saveElement.innerHTML += saveStr;
   passangerElement.innerHTML = 0;

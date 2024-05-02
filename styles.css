@@ -11,21 +11,30 @@ body {
   border-radius: 10px;
   color: white;
   text-align: center;
+  padding-left: 0px;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 button {
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: white;
+  color: #343a40;
   font-weight: bold;
   width: 200px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border-radius: 5px;
   background-color: #343a40;
   cursor: pointer;
   font-family: cursive;
+  background-color: #feeafa;
 }
 button:hover {
   background-color: white;
   color: #343a40;
+}
+#previous-entries {
+  padding: 20px;
+  font-size: 25px;
 }

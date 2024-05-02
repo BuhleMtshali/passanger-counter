@@ -18,9 +18,21 @@ function save(event) {
 
   let saveStr = number + " - ";
   saveElement.innerHTML += saveStr;
+
   passangerElement.innerHTML = 0;
   number = 0;
 }
 
 let saveButton = document.querySelector("#save-btn");
 saveButton.addEventListener("click", save);
+
+function reset(event) {
+  event.preventDefault();
+  passangerElement.innerHTML = 0;
+  number = 0;
+  let resetText = document.querySelector("#previous-entries");
+  resetText.innerHTML = "Previous Entries: ";
+}
+
+let resetButton = document.querySelector("#reset-btn");
+resetButton.addEventListener("click", reset);
